@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Compra · Curso ZAURA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper navbar">
+        <div class="logo"><span>ZAURA</span></div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="cursos.html">Curso</a></li>
+            <li><a href="opiniones.html">Opiniones</a></li>
+            <li><a href="sobre.html">Sobre mí</a></li>
+            <li><a href="contacto.html" class="activo">Contacto</a></li>
+            <li><a href="demo.html">Aula demo</a></li>
+          </ul>
+        </nav>
+        <button class="menu-toggle js-toggle-menu">☰</button>
+      </div>
+    </header>
+
+    <main class="wrapper">
+      <section>
+        <h1 class="section-title">Finalizar compra</h1>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Resumen del pedido</h3>
+            <p><strong>Curso:</strong> Asistente Virtual ZAURA</p>
+            <p><strong>Precio:</strong> 49,99 €</p>
+            <p>
+              Tras completar la compra recibirías acceso inmediato al área de
+              alumnos (en este caso se trata de una simulación para el proyecto
+              educativo).
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Datos de pago (simulados)</h3>
+            <form>
+              <div>
+                <label>Nombre completo</label>
+                <input type="text" required />
+              </div>
+              <div>
+                <label>Correo electrónico</label>
+                <input type="email" required />
+              </div>
+              <div>
+                <label>Método de pago</label>
+                <input type="text" placeholder="Tarjeta, PayPal..." />
+              </div>
+              <button class="btn btn-primario" type="submit">
+                Confirmar compra
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrapper footer-content">
+        <span>© 2025 ZAURA</span>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
