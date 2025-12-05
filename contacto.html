@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contacto · ZAURA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper navbar">
+        <div class="logo"><span>ZAURA</span></div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="cursos.html">Curso</a></li>
+            <li><a href="opiniones.html">Opiniones</a></li>
+            <li><a href="sobre.html">Sobre mí</a></li>
+            <li><a href="contacto.html" class="activo">Contacto</a></li>
+            <li><a href="demo.html">Aula demo</a></li>
+          </ul>
+        </nav>
+        <button class="menu-toggle js-toggle-menu">☰</button>
+      </div>
+    </header>
+
+    <main class="wrapper">
+      <section>
+        <h1 class="section-title">Contacto</h1>
+        <p class="section-subtitle">
+          Si tienes dudas sobre el contenido del curso o quieres más
+          información, puedes escribirme a través de este formulario.
+        </p>
+
+        <form>
+          <div>
+            <label>Nombre</label>
+            <input type="text" required />
+          </div>
+          <div>
+            <label>Correo electrónico</label>
+            <input type="email" required />
+          </div>
+          <div>
+            <label>Asunto</label>
+            <input type="text" />
+          </div>
+          <div>
+            <label>Mensaje</label>
+            <textarea></textarea>
+          </div>
+          <button class="btn btn-primario" type="submit">Enviar mensaje</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrapper footer-content">
+        <span>© 2025 ZAURA</span>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
