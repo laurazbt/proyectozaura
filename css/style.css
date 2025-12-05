@@ -1,0 +1,316 @@
+/* =========================
+   PROYECTO ZAURA - ESTILOS
+   ========================= */
+
+:root {
+  --rosa-melocoton: #f6c3b2;
+  --rosa-terracota: #e9a995;
+  --menta: #a4c9c5;
+  --amarillo: #f7d98d;
+  --topo: #8d6f63;
+  --fondo: #fff8f4;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  background-color: var(--fondo);
+  color: var(--topo);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Layout general */
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* CABECERA */
+
+header {
+  background-color: var(--menta);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+}
+
+.logo {
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.12em;
+}
+
+.logo span {
+  font-weight: 700;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav-links a {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-links a.activo {
+  border-bottom: 2px solid var(--rosa-terracota);
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+/* BOTONES */
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-primario {
+  background-color: var(--rosa-terracota);
+  color: white;
+}
+
+.btn-primario:hover {
+  background-color: #d48a74;
+}
+
+.btn-secundario {
+  background-color: white;
+  color: var(--topo);
+  border: 2px solid var(--topo);
+}
+
+.btn-secundario:hover {
+  background-color: var(--rosa-melocoton);
+}
+
+/* SECCIONES GENERALES */
+
+section {
+  padding: 3rem 0;
+}
+
+.section-title {
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-subtitle {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* HERO (INICIO) */
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  align-items: center;
+  padding: 3.5rem 0 2rem;
+}
+
+.hero-text h1 {
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  margin-bottom: 1.5rem;
+}
+
+.hero-badge {
+  display: inline-block;
+  background-color: var(--amarillo);
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Tarjetas genéricas */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  margin-bottom: 0.6rem;
+}
+
+/* TESTIMONIOS */
+
+.testimonios {
+  background-color: var(--rosa-melocoton);
+  border-radius: 24px;
+  padding: 2rem;
+}
+
+.testimonio-item {
+  margin-bottom: 1rem;
+}
+
+/* FORMULARIOS */
+
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+label {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+input,
+textarea {
+  padding: 0.7rem;
+  border-radius: 10px;
+  border: 1px solid #d0bfb5;
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--rosa-terracota);
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--topo);
+  color: #fbeae0;
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+}
+
+/* PÁGINAS ESPECÍFICAS */
+
+.curso-header {
+  background-color: var(--rosa-melocoton);
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.curso-info {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.precio {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Tabla simple para presupuesto, etc. */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+th,
+td {
+  border: 1px solid #e0d1c8;
+  padding: 0.6rem;
+  text-align: left;
+}
+
+th {
+  background-color: var(--rosa-melocoton);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .curso-info {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 1.5rem;
+    top: 60px;
+    flex-direction: column;
+    background-color: var(--menta);
+    padding: 1rem;
+    border-radius: 12px;
+    display: none;
+  }
+
+  .nav-links.is-open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
